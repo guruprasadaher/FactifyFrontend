@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /**
+   * Tailwind CSS theme - Trust-focused color palette
+   * Colors expressed as HSL values for deepfake & fake news detection app
+  */
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 220 13% 18%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 13% 18%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 13% 18%;
+
+    /* Trust blue - primary brand color */
+    --primary: 212 93% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Light gray - secondary background */
+    --secondary: 220 13% 96%;
+    --secondary-foreground: 220 13% 18%;
+
+    /* Muted gray tones */
+    --muted: 220 13% 95%;
+    --muted-foreground: 220 9% 46%;
+
+    /* Accent blue - slightly lighter than primary */
+    --accent: 213 93% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Red for fake/dangerous results */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Green for verified/safe results */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+
+    /* Warning orange for uncertain results */
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    /* Border and input styling */
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 212 93% 50%;
+
+    --radius: 0.5rem;
+
+    /* Sidebar colors (keeping existing structure) */
+    --sidebar-background: 220 13% 98%;
+    --sidebar-foreground: 220 13% 18%;
+    --sidebar-primary: 212 93% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 13% 95%;
+    --sidebar-accent-foreground: 220 13% 18%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 212 93% 50%;
+  }
+
+  .dark {
+    --background: 220 13% 9%;
+    --foreground: 220 13% 98%;
+
+    --card: 220 13% 11%;
+    --card-foreground: 220 13% 98%;
+
+    --popover: 220 13% 11%;
+    --popover-foreground: 220 13% 98%;
+
+    /* Trust blue - adjusted for dark theme */
+    --primary: 212 93% 60%;
+    --primary-foreground: 220 13% 9%;
+
+    --secondary: 220 13% 15%;
+    --secondary-foreground: 220 13% 98%;
+
+    --muted: 220 13% 15%;
+    --muted-foreground: 220 9% 70%;
+
+    --accent: 213 93% 65%;
+    --accent-foreground: 220 13% 9%;
+
+    /* Red for fake results - darker theme */
+    --destructive: 0 84% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Green for verified results - darker theme */
+    --success: 142 76% 45%;
+    --success-foreground: 0 0% 100%;
+
+    /* Warning orange - darker theme */
+    --warning: 38 92% 55%;
+    --warning-foreground: 0 0% 100%;
+
+    --border: 220 13% 20%;
+    --input: 220 13% 20%;
+    --ring: 212 93% 60%;
+
+    /* Dark sidebar colors */
+    --sidebar-background: 220 13% 11%;
+    --sidebar-foreground: 220 13% 98%;
+    --sidebar-primary: 212 93% 60%;
+    --sidebar-primary-foreground: 220 13% 9%;
+    --sidebar-accent: 220 13% 15%;
+    --sidebar-accent-foreground: 220 13% 98%;
+    --sidebar-border: 220 13% 20%;
+    --sidebar-ring: 212 93% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-inter;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold;
+  }
+}
